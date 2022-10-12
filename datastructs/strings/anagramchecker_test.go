@@ -17,7 +17,7 @@ func Test_AnagramChecker(t *testing.T) {
 		t.Run(d.name, func(t *testing.T){
 			res := AnagramChecker(d.s1, d.s2)
 			if res != d.isAnagram {
-				t.Errorf("s1: %s, s2: %s: Expected %t, got %t", d.s1, d.s2, d.isAnagram, res)
+				t.Errorf("%s -> s1: %s, s2: %s: Expected %t, got %t", d.name, d.s1, d.s2, d.isAnagram, res)
 			}
 		})
 	}
