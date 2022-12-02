@@ -9,6 +9,7 @@ func WordFlipper(s string) string {
 		b = reverse(b, i, j)
 		i, j = nextword(b, nj+1, nj+1)
 	}
+
 	return string(b)
 }
 
@@ -23,6 +24,7 @@ func nextword(b []byte, i, j int) (int, int) {
 		k++
 	}
 	nj := k-1
+
 	return ni, nj
 }
 
@@ -33,5 +35,6 @@ func reverse(b []byte, i, j int) []byte {
 		i++
 		j--
 	}
+	
 	return b
 }

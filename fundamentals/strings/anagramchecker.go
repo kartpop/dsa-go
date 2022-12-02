@@ -21,5 +21,6 @@ func AnagramChecker(s1 string, s2 string) bool {
 			return false
 		}
 	}
+	
 	return true
 }
