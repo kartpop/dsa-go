@@ -1,3 +1,3 @@
-module dsa-go
+module github.com/kartpop/dsa-go
 
-go 1.18
+go 1.19
